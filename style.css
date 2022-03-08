@@ -1,0 +1,122 @@
+/* COLORS :
+Background = #c5e4e7
+Card background = #FFF
+Screen background #00474b
+Line background = #f3f8fb
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src : url('SpaceMono.ttf') format('truetype');
+}
+
+body {
+    background-color: #c5e4e7;
+    font-family: 'Space Mono';
+}
+
+img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-background {
+    background-color: #FFF;
+    width: 1250px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px hsl(186, 14%, 43%);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.screen-background {
+    background-color: #00474b;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 50px;
+}
+
+.tip-button {
+    background-color: #00474b;
+    width: 100px;
+    height: 50px;
+    color: #FFF;
+    font-family: 'Space Mono';
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tip-input {
+    width: 100px;
+    height: 50px;
+}
+
+.hint-text-dark {
+    color: #FFF;
+}
+
+.reset-button {
+    background-color: #26c2ad;
+    width: 400px;
+    height: 50px;
+    color: #00474b;
+    font-family: 'Space Mono';
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 100px;
+}
+
+.tip-amount, .tip-total {
+    margin-top: 50px;
+}
+
+.tip-amount-price {
+    color: #26c2ad;
+    font-size: 48px;
+    float: right;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.total-price {
+    color: #26c2ad;
+    font-size: 48px;
+    float: right;
+    position: absolute;
+    top: 135px;
+    right: 0;
+}
+
+.hint-text-sub {
+    color: #26c2ad;
+}
